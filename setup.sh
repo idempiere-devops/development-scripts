@@ -18,7 +18,7 @@ while [[ $# -gt 0 ]]; do
 done
 
 if [ ${clean} = true ]; then
-    docker rm -f postgres-idempiere
+    docker rm -fv postgres-idempiere
     exit 0
 fi
 
